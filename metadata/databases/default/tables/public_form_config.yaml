@@ -1,0 +1,24 @@
+table:
+  name: form_config
+  schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - grade
+        - hindi_start_index
+        - hindi_end_index
+        - maths_start_index
+        - maths_end_index
+      filter: {}
+  - role: manav_sampada
+    permission:
+      columns:
+        - grade
+        - hindi_end_index
+        - hindi_start_index
+        - id
+        - maths_end_index
+        - maths_start_index
+      filter: {}

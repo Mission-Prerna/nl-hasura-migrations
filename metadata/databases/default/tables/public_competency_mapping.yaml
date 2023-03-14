@@ -1,0 +1,45 @@
+table:
+  name: competency_mapping
+  schema: public
+object_relationships:
+  - name: competancy_id_mapping
+    using:
+      manual_configuration:
+        column_mapping:
+          competency_id: competency_id
+        insertion_order: null
+        remote_table:
+          name: workflow_refids_mapping
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - competency_id
+        - flow_state
+        - grade
+        - id
+        - learning_outcome
+        - subject
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - competency_id
+        - flow_state
+        - grade
+        - id
+        - learning_outcome
+        - subject
+      filter: {}
+      allow_aggregations: true
+  - role: manav_sampada
+    permission:
+      columns:
+        - competency_id
+        - flow_state
+        - grade
+        - id
+        - learning_outcome
+        - subject
+      filter: {}

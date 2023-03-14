@@ -1,0 +1,3 @@
+table:
+  name: script_performance_report
+  schema: public

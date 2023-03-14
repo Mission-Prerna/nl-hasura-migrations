@@ -1,0 +1,3 @@
+table:
+  name: assessment_visit_result_flatten
+  schema: public

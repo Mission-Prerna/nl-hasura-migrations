@@ -1,0 +1,99 @@
+table:
+  name: mentor
+  schema: public
+object_relationships:
+  - name: fcm_token
+    using:
+      manual_configuration:
+        column_mapping:
+          id: mentor_id
+        insertion_order: null
+        remote_table:
+          name: mentor_tokens
+          schema: public
+  - name: teacher_school_list_mapping
+    using:
+      manual_configuration:
+        column_mapping:
+          id: mentor_id
+        insertion_order: null
+        remote_table:
+          name: teacher_school_list_mapping
+          schema: public
+  - name: token
+    using:
+      manual_configuration:
+        column_mapping:
+          id: mentor_id
+        insertion_order: null
+        remote_table:
+          name: mentor_tokens
+          schema: public
+array_relationships:
+  - name: segmentations
+    using:
+      foreign_key_constraint_on:
+        column: mentor_id
+        table:
+          name: mentor_segmentation
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - area_type
+        - block_town_name
+        - designation
+        - district_name
+        - officer_name
+        - phone_no
+        - subject_of_matter
+        - target_visits
+        - pin
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - id
+        - area_type
+        - block_town_name
+        - designation
+        - district_name
+        - officer_name
+        - phone_no
+        - subject_of_matter
+        - target_visits
+        - pin
+      filter: {}
+update_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - area_type
+        - block_town_name
+        - designation
+        - district_name
+        - officer_name
+        - phone_no
+        - subject_of_matter
+        - target_visits
+        - pin
+      filter: {}
+      check: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - id
+        - area_type
+        - block_town_name
+        - designation
+        - district_name
+        - officer_name
+        - phone_no
+        - subject_of_matter
+        - target_visits
+        - pin
+      filter: {}
+      check: {}

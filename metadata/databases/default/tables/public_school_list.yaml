@@ -1,0 +1,67 @@
+table:
+  name: school_list
+  schema: public
+object_relationships:
+  - name: school_visit
+    using:
+      manual_configuration:
+        column_mapping:
+          udise_code: school_udise
+        insertion_order: null
+        remote_table:
+          name: school_visit
+          schema: public
+array_relationships:
+  - name: school_visits
+    using:
+      foreign_key_constraint_on:
+        column: school_udise
+        table:
+          name: school_visit
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - district
+        - area_type
+        - block
+        - nypanchayat
+        - type
+        - category
+        - name
+        - udise_code
+        - total_student_registered
+      filter: {}
+      allow_aggregations: true
+  - role: OpenRole
+    permission:
+      columns:
+        - area_type
+        - block
+        - category
+        - district
+        - name
+        - nypanchayat
+        - type
+        - udise_code
+        - id
+        - total_student_registered
+      filter: {}
+      allow_aggregations: true
+  - role: manav_sampada
+    permission:
+      columns:
+        - id
+        - total_student_registered
+        - area_type
+        - block
+        - category
+        - district
+        - name
+        - nypanchayat
+        - type
+        - udise_code
+      filter: {}
+      allow_aggregations: true

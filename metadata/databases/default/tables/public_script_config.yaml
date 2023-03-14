@@ -1,0 +1,3 @@
+table:
+  name: script_config
+  schema: public

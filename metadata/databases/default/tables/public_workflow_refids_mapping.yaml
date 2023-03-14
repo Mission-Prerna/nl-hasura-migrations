@@ -1,0 +1,40 @@
+table:
+  name: workflow_refids_mapping
+  schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - assessment_type
+        - competency_id
+        - grade
+        - is_active
+        - ref_ids
+        - subject
+        - type
+      filter: {}
+      allow_aggregations: true
+  - role: OpenRole
+    permission:
+      columns:
+        - assessment_type
+        - competency_id
+        - grade
+        - is_active
+        - ref_ids
+        - subject
+        - type
+      filter: {}
+      allow_aggregations: true
+  - role: manav_sampada
+    permission:
+      columns:
+        - assessment_type
+        - competency_id
+        - grade
+        - is_active
+        - ref_ids
+        - subject
+        - type
+      filter: {}
+      allow_aggregations: true

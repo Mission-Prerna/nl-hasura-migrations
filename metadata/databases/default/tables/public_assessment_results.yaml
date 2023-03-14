@@ -1,0 +1,54 @@
+table:
+  name: assessment_results
+  schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check:
+        username:
+          _eq: X-Hasura-User-Id
+      columns:
+        - block_code
+        - block_name
+        - date_of_assessment
+        - district_code
+        - district_name
+        - grade1_prerakstudents
+        - grade1_total
+        - grade2_prerakstudents
+        - grade2_total
+        - grade3_prerakstudents
+        - grade3_total
+        - grade4_prerakstudents
+        - grade4_total
+        - grade5_prerakstudents
+        - grade5_total
+        - school_name
+        - udise
+        - username
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - username
+        - udise
+        - school_name
+        - district_code
+        - block_code
+        - district_name
+        - block_name
+        - grade1_total
+        - grade2_total
+        - grade3_total
+        - grade4_total
+        - grade5_total
+        - grade1_prerakstudents
+        - grade2_prerakstudents
+        - grade3_prerakstudents
+        - grade4_prerakstudents
+        - grade5_prerakstudents
+        - date_of_assessment
+      filter:
+        username:
+          _eq: X-Hasura-User-Id

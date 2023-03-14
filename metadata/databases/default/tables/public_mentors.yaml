@@ -1,0 +1,26 @@
+table:
+  name: mentors
+  schema: public
+array_relationships:
+  - name: school_visits
+    using:
+      foreign_key_constraint_on:
+        column: mentor_id
+        table:
+          name: school_visit
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - officer_name
+        - phone_no
+      filter: {}
+  - role: manav_sampada
+    permission:
+      columns:
+        - id
+        - officer_name
+        - phone_no
+      filter: {}

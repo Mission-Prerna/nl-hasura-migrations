@@ -1,0 +1,50 @@
+table:
+  name: fcm_tokens
+  schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check: {}
+      columns:
+        - user_id
+        - token
+  - role: OpenRole
+    permission:
+      check: {}
+      columns:
+        - user_id
+        - token
+  - role: manav_sampada
+    permission:
+      check: {}
+      columns:
+        - user_id
+        - token
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - user_id
+        - token
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - user_id
+        - token
+      filter: {}
+update_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - user_id
+        - token
+      filter: {}
+      check: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - user_id
+        - token
+      filter: {}
+      check: {}

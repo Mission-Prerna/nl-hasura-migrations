@@ -1,0 +1,67 @@
+table:
+  name: student_install
+  schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      columns:
+        - block
+        - count
+        - device_id
+        - district
+        - persona
+        - version
+  - role: manav_sampada
+    permission:
+      check:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      columns:
+        - block
+        - count
+        - created_at
+        - default_role
+        - device_id
+        - district
+        - id
+        - persona
+        - updated_at
+        - version
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - block
+        - count
+        - created_at
+        - default_role
+        - device_id
+        - district
+        - id
+        - persona
+        - updated_at
+        - version
+      filter:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      limit: 1
+  - role: manav_sampada
+    permission:
+      columns:
+        - block
+        - count
+        - created_at
+        - default_role
+        - device_id
+        - district
+        - id
+        - persona
+        - updated_at
+        - version
+      filter:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      limit: 1

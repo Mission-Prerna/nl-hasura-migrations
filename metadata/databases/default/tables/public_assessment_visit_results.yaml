@@ -1,0 +1,114 @@
+table:
+  name: assessment_visit_results
+  schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check: {}
+      columns:
+        - actor
+        - assessment_type
+        - block
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - student_session
+        - subject
+        - total_time_taken
+        - udise_code
+  - role: OpenRole
+    permission:
+      check: {}
+      columns:
+        - actor
+        - assessment_type
+        - block
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - student_session
+        - subject
+        - total_time_taken
+        - udise_code
+  - role: manav_sampada
+    permission:
+      check: {}
+      columns:
+        - actor
+        - assessment_type
+        - block
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - student_session
+        - subject
+        - total_time_taken
+        - udise_code
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - actor
+        - assessment_type
+        - block
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - student_session
+        - subject
+        - total_time_taken
+        - udise_code
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - actor
+        - assessment_type
+        - block
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - student_session
+        - subject
+        - total_time_taken
+        - udise_code
+      filter: {}
+      allow_aggregations: true
+  - role: manav_sampada
+    permission:
+      columns:
+        - actor
+        - assessment_type
+        - block
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - student_session
+        - subject
+        - total_time_taken
+        - udise_code
+      filter: {}
