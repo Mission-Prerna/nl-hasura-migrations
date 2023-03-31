@@ -1,0 +1,30 @@
+table:
+  name: districts
+  schema: public
+array_relationships:
+  - name: blocks
+    using:
+      manual_configuration:
+        column_mapping:
+          id: district_id
+        insertion_order: null
+        remote_table:
+          name: blocks
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - name
+        - id
+        - created_at
+        - updated_at
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - name
+        - id
+        - created_at
+        - updated_at
+      filter: {}

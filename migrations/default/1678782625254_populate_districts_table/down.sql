@@ -1,0 +1,1 @@
+truncate table districts RESTART IDENTITY CASCADE;

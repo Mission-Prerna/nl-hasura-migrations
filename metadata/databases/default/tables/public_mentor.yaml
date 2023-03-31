@@ -2,6 +2,18 @@ table:
   name: mentor
   schema: public
 object_relationships:
+  - name: actor
+    using:
+      foreign_key_constraint_on: actor_id
+  - name: block
+    using:
+      foreign_key_constraint_on: block_id
+  - name: designationByDesignationId
+    using:
+      foreign_key_constraint_on: designation_id
+  - name: district
+    using:
+      foreign_key_constraint_on: district_id
   - name: fcm_token
     using:
       manual_configuration:

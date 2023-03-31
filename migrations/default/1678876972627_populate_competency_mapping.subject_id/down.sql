@@ -1,0 +1,6 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- update competency_mapping AS c
+-- set subject_id = s.id
+-- from subjects s
+-- where c.subject = s.name;

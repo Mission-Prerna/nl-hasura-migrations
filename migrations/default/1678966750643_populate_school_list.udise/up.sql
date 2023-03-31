@@ -1,0 +1,1 @@
+update school_list set udise = udise_code::bigint where udise_code != '-';

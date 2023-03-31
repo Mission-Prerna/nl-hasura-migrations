@@ -1,0 +1,6 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- update mentor AS m
+-- set block_id = b.id
+-- from blocks b
+-- where b.name = m.block_town_name;

@@ -1,0 +1,3 @@
+table:
+  name: assessment_survey_result_questions
+  schema: public

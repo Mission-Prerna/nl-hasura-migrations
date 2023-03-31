@@ -1,0 +1,3 @@
+table:
+  name: assessment_types
+  schema: public

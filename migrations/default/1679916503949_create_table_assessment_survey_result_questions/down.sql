@@ -1,0 +1,1 @@
+drop table assessment_survey_result_questions;

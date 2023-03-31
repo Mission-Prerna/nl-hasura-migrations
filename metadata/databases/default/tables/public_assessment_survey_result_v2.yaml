@@ -1,0 +1,74 @@
+table:
+  name: assessment_survey_result_v2
+  schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check: {}
+      columns:
+        - actor_id
+        - created_at
+        - grade
+        - id
+        - mentor_id
+        - subject_id
+        - udise
+  - role: OpenRole
+    permission:
+      check: {}
+      columns:
+        - actor_id
+        - created_at
+        - grade
+        - id
+        - mentor_id
+        - subject_id
+        - udise
+  - role: manav_sampada
+    permission:
+      check: {}
+      columns:
+        - actor_id
+        - created_at
+        - grade
+        - id
+        - mentor_id
+        - subject_id
+        - udise
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - actor_id
+        - created_at
+        - grade
+        - id
+        - mentor_id
+        - subject_id
+        - udise
+      filter: {}
+      limit: 10000
+  - role: OpenRole
+    permission:
+      columns:
+        - actor_id
+        - created_at
+        - grade
+        - id
+        - mentor_id
+        - subject_id
+        - udise
+      filter: {}
+      limit: 10000
+  - role: manav_sampada
+    permission:
+      columns:
+        - actor_id
+        - created_at
+        - grade
+        - id
+        - mentor_id
+        - subject_id
+        - udise
+      filter: {}
+      limit: 10000

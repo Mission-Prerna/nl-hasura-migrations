@@ -1,0 +1,1 @@
+truncate table blocks RESTART IDENTITY CASCADE;

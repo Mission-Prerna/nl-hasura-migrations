@@ -2,6 +2,12 @@ table:
   name: school_list
   schema: public
 object_relationships:
+  - name: blockByBlockId
+    using:
+      foreign_key_constraint_on: block_id
+  - name: districtByDistrictId
+    using:
+      foreign_key_constraint_on: district_id
   - name: school_visit
     using:
       manual_configuration:
@@ -23,16 +29,18 @@ select_permissions:
   - role: DIET
     permission:
       columns:
-        - id
-        - district
         - area_type
         - block
-        - nypanchayat
-        - type
+        - block_id
         - category
+        - district
+        - district_id
+        - id
         - name
-        - udise_code
+        - nypanchayat
         - total_student_registered
+        - type
+        - udise_code
       filter: {}
       allow_aggregations: true
   - role: OpenRole
@@ -40,14 +48,16 @@ select_permissions:
       columns:
         - area_type
         - block
+        - block_id
         - category
         - district
+        - district_id
+        - id
         - name
         - nypanchayat
+        - total_student_registered
         - type
         - udise_code
-        - id
-        - total_student_registered
       filter: {}
       allow_aggregations: true
   - role: manav_sampada

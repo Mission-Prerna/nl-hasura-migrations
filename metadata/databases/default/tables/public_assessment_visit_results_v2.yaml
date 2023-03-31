@@ -1,0 +1,116 @@
+table:
+  name: assessment_visit_results_v2
+  schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check: {}
+      columns:
+        - id
+        - udise
+        - is_visited
+        - actor_id
+        - assessment_type_id
+        - block_id
+        - mentor_id
+        - no_of_student
+        - subject_id
+        - total_time_taken
+        - module_result
+        - grade
+        - created_at
+        - student_session
+  - role: OpenRole
+    permission:
+      check: {}
+      columns:
+        - id
+        - udise
+        - is_visited
+        - actor_id
+        - assessment_type_id
+        - block_id
+        - mentor_id
+        - no_of_student
+        - subject_id
+        - total_time_taken
+        - module_result
+        - grade
+        - created_at
+        - student_session
+  - role: manav_sampada
+    permission:
+      check: {}
+      columns:
+        - id
+        - udise
+        - is_visited
+        - actor_id
+        - assessment_type_id
+        - block_id
+        - mentor_id
+        - no_of_student
+        - subject_id
+        - total_time_taken
+        - module_result
+        - grade
+        - created_at
+        - student_session
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - udise
+        - is_visited
+        - actor_id
+        - assessment_type_id
+        - block_id
+        - mentor_id
+        - no_of_student
+        - subject_id
+        - total_time_taken
+        - module_result
+        - grade
+        - created_at
+        - student_session
+      filter: {}
+      limit: 10000
+  - role: OpenRole
+    permission:
+      columns:
+        - id
+        - udise
+        - is_visited
+        - actor_id
+        - assessment_type_id
+        - block_id
+        - mentor_id
+        - no_of_student
+        - subject_id
+        - total_time_taken
+        - module_result
+        - grade
+        - created_at
+        - student_session
+      filter: {}
+      limit: 10000
+  - role: manav_sampada
+    permission:
+      columns:
+        - id
+        - udise
+        - is_visited
+        - actor_id
+        - assessment_type_id
+        - block_id
+        - mentor_id
+        - no_of_student
+        - subject_id
+        - total_time_taken
+        - module_result
+        - grade
+        - created_at
+        - student_session
+      filter: {}
+      limit: 10000
