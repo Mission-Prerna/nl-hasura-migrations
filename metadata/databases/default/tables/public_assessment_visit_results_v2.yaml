@@ -6,111 +6,105 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - id
-        - udise
-        - is_visited
         - actor_id
         - assessment_type_id
         - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
         - mentor_id
+        - module_result
         - no_of_student
         - subject_id
-        - total_time_taken
-        - module_result
-        - grade
-        - created_at
-        - student_session
+        - submission_date
+        - udise
   - role: OpenRole
     permission:
       check: {}
       columns:
-        - id
-        - udise
-        - is_visited
         - actor_id
         - assessment_type_id
         - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
         - mentor_id
+        - module_result
         - no_of_student
         - subject_id
-        - total_time_taken
-        - module_result
-        - grade
-        - created_at
-        - student_session
+        - submission_date
+        - udise
   - role: manav_sampada
     permission:
       check: {}
       columns:
-        - id
-        - udise
-        - is_visited
         - actor_id
         - assessment_type_id
         - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
         - mentor_id
+        - module_result
         - no_of_student
         - subject_id
-        - total_time_taken
-        - module_result
-        - grade
-        - created_at
-        - student_session
+        - submission_date
+        - udise
 select_permissions:
   - role: DIET
     permission:
       columns:
-        - id
-        - udise
-        - is_visited
         - actor_id
         - assessment_type_id
         - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
         - mentor_id
+        - module_result
         - no_of_student
         - subject_id
-        - total_time_taken
-        - module_result
-        - grade
-        - created_at
-        - student_session
+        - submission_date
+        - udise
       filter: {}
       limit: 10000
   - role: OpenRole
     permission:
       columns:
-        - id
-        - udise
-        - is_visited
         - actor_id
         - assessment_type_id
         - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
         - mentor_id
+        - module_result
         - no_of_student
         - subject_id
-        - total_time_taken
-        - module_result
-        - grade
-        - created_at
-        - student_session
+        - submission_date
+        - udise
       filter: {}
       limit: 10000
   - role: manav_sampada
     permission:
       columns:
-        - id
-        - udise
-        - is_visited
         - actor_id
         - assessment_type_id
         - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
         - mentor_id
+        - module_result
         - no_of_student
         - subject_id
-        - total_time_taken
-        - module_result
-        - grade
-        - created_at
-        - student_session
+        - submission_date
+        - udise
       filter: {}
       limit: 10000
