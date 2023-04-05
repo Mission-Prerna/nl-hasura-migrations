@@ -2,6 +2,9 @@ table:
   name: assessment_visit_results_v2
   schema: public
 object_relationships:
+  - name: mentor
+    using:
+      foreign_key_constraint_on: mentor_id
   - name: school
     using:
       foreign_key_constraint_on: udise
