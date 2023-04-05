@@ -12,6 +12,7 @@ insert_permissions:
         - id
         - mentor_id
         - subject_id
+        - submission_date
         - udise
   - role: OpenRole
     permission:
@@ -23,6 +24,7 @@ insert_permissions:
         - id
         - mentor_id
         - subject_id
+        - submission_date
         - udise
   - role: manav_sampada
     permission:
@@ -34,6 +36,7 @@ insert_permissions:
         - id
         - mentor_id
         - subject_id
+        - submission_date
         - udise
 select_permissions:
   - role: DIET
@@ -45,6 +48,7 @@ select_permissions:
         - id
         - mentor_id
         - subject_id
+        - submission_date
         - udise
       filter: {}
       limit: 10000
@@ -57,6 +61,7 @@ select_permissions:
         - id
         - mentor_id
         - subject_id
+        - submission_date
         - udise
       filter: {}
       limit: 10000
@@ -69,6 +74,7 @@ select_permissions:
         - id
         - mentor_id
         - subject_id
+        - submission_date
         - udise
       filter: {}
       limit: 10000
