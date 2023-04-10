@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- alter table "public"."assessment_survey_result_v2" add column "app_version_code" integer
+--  not null default '0';

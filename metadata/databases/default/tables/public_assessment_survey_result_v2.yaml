@@ -7,44 +7,52 @@ insert_permissions:
       check: {}
       columns:
         - actor_id
+        - app_version_code
         - created_at
         - grade
         - id
         - mentor_id
         - subject_id
+        - submission_timestamp
         - udise
   - role: OpenRole
     permission:
       check: {}
       columns:
         - actor_id
+        - app_version_code
         - created_at
         - grade
         - id
         - mentor_id
         - subject_id
+        - submission_timestamp
         - udise
   - role: manav_sampada
     permission:
       check: {}
       columns:
         - actor_id
+        - app_version_code
         - created_at
         - grade
         - id
         - mentor_id
         - subject_id
+        - submission_timestamp
         - udise
 select_permissions:
   - role: DIET
     permission:
       columns:
         - actor_id
+        - app_version_code
         - created_at
         - grade
         - id
         - mentor_id
         - subject_id
+        - submission_timestamp
         - udise
       filter: {}
       limit: 10000
@@ -52,11 +60,13 @@ select_permissions:
     permission:
       columns:
         - actor_id
+        - app_version_code
         - created_at
         - grade
         - id
         - mentor_id
         - subject_id
+        - submission_timestamp
         - udise
       filter: {}
       limit: 10000
@@ -64,11 +74,13 @@ select_permissions:
     permission:
       columns:
         - actor_id
+        - app_version_code
         - created_at
         - grade
         - id
         - mentor_id
         - subject_id
+        - submission_timestamp
         - udise
       filter: {}
       limit: 10000
