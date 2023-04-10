@@ -1,0 +1,1 @@
+alter table "public"."assessment_survey_result_v2" add constraint "assessment_survey_result_v2_mentor_id_grade_subject_id_submission_date_key" unique ("mentor_id", "grade", "subject_id", "submission_date");
