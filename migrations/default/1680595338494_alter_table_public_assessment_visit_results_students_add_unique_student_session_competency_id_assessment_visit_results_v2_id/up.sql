@@ -1,0 +1,1 @@
+alter table "public"."assessment_visit_results_students" add constraint "assessment_visit_results_students_student_session_competency_id_assessment_visit_results_v2_id_key" unique ("student_session", "competency_id", "assessment_visit_results_v2_id");

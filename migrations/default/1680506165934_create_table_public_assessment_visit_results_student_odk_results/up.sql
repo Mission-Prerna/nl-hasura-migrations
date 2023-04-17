@@ -1,0 +1,1 @@
+CREATE TABLE "public"."assessment_visit_results_student_odk_results" ("id" serial NOT NULL, "question" text, "answer" text, "assessment_visit_results_students_id" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("assessment_visit_results_students_id") REFERENCES "public"."assessment_visit_results_students"("id") ON UPDATE cascade ON DELETE cascade);
