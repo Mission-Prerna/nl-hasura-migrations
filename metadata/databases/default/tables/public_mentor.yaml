@@ -62,6 +62,10 @@ select_permissions:
         - phone_no
         - subject_of_matter
         - target_visits
+        - actor_id
+        - block_id
+        - designation_id
+        - district_id
         - pin
       filter: {}
   - role: OpenRole
@@ -76,36 +80,22 @@ select_permissions:
         - phone_no
         - subject_of_matter
         - target_visits
+        - actor_id
+        - block_id
+        - designation_id
+        - district_id
         - pin
       filter: {}
 update_permissions:
   - role: DIET
     permission:
       columns:
-        - id
-        - area_type
-        - block_town_name
-        - designation
-        - district_name
-        - officer_name
-        - phone_no
-        - subject_of_matter
-        - target_visits
         - pin
       filter: {}
       check: {}
   - role: OpenRole
     permission:
       columns:
-        - id
-        - area_type
-        - block_town_name
-        - designation
-        - district_name
-        - officer_name
-        - phone_no
-        - subject_of_matter
-        - target_visits
         - pin
       filter: {}
       check: {}

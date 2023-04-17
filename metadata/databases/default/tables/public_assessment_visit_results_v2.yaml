@@ -8,6 +8,14 @@ object_relationships:
   - name: school
     using:
       foreign_key_constraint_on: udise
+array_relationships:
+  - name: assessment_visit_results_students
+    using:
+      foreign_key_constraint_on:
+        column: assessment_visit_results_v2_id
+        table:
+          name: assessment_visit_results_students
+          schema: public
 insert_permissions:
   - role: DIET
     permission:
