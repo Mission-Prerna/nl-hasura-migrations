@@ -1,0 +1,1 @@
+drop table if exists assessment_visit_results_v2_2023_oct_dec

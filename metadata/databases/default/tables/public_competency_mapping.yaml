@@ -15,12 +15,13 @@ select_permissions:
   - role: DIET
     permission:
       columns:
+        - id
+        - grade
+        - subject
+        - learning_outcome
         - competency_id
         - flow_state
-        - grade
-        - id
-        - learning_outcome
-        - subject
+        - subject_id
       filter: {}
   - role: OpenRole
     permission:
@@ -31,15 +32,17 @@ select_permissions:
         - id
         - learning_outcome
         - subject
+        - subject_id
       filter: {}
       allow_aggregations: true
   - role: manav_sampada
     permission:
       columns:
+        - grade
+        - subject
         - competency_id
         - flow_state
-        - grade
         - id
+        - subject_id
         - learning_outcome
-        - subject
       filter: {}

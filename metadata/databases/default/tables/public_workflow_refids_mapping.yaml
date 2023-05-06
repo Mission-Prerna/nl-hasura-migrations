@@ -5,10 +5,13 @@ select_permissions:
   - role: DIET
     permission:
       columns:
+        - is_active
         - assessment_type
+        - assessment_type_id
         - competency_id
         - grade
-        - is_active
+        - id
+        - subject_id
         - ref_ids
         - subject
         - type
@@ -17,10 +20,13 @@ select_permissions:
   - role: OpenRole
     permission:
       columns:
+        - is_active
         - assessment_type
+        - assessment_type_id
         - competency_id
         - grade
-        - is_active
+        - id
+        - subject_id
         - ref_ids
         - subject
         - type
@@ -29,10 +35,13 @@ select_permissions:
   - role: manav_sampada
     permission:
       columns:
+        - is_active
         - assessment_type
+        - assessment_type_id
         - competency_id
         - grade
-        - is_active
+        - id
+        - subject_id
         - ref_ids
         - subject
         - type
