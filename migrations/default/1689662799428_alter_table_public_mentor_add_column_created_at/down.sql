@@ -1,0 +1,1 @@
+ALTER TABLE mentor DROP COLUMN created_at;
