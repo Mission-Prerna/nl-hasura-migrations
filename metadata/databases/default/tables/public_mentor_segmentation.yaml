@@ -1,37 +1,3 @@
 table:
   name: mentor_segmentation
   schema: public
-object_relationships:
-  - name: mentor
-    using:
-      foreign_key_constraint_on: mentor_id
-  - name: segment
-    using:
-      foreign_key_constraint_on: segment_id
-array_relationships:
-  - name: mentors
-    using:
-      manual_configuration:
-        column_mapping:
-          mentor_id: id
-        insertion_order: null
-        remote_table:
-          name: mentor
-          schema: public
-select_permissions:
-  - role: DIET
-    permission:
-      columns:
-        - id
-        - mentor_id
-        - segment_id
-        - created_at
-      filter: {}
-  - role: OpenRole
-    permission:
-      columns:
-        - id
-        - mentor_id
-        - segment_id
-        - created_at
-      filter: {}

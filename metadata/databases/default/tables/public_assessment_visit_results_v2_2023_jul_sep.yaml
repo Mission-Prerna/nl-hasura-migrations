@@ -1,27 +1,3 @@
 table:
   name: assessment_visit_results_v2_2023_jul_sep
   schema: public
-object_relationships:
-  - name: actor
-    using:
-      foreign_key_constraint_on: actor_id
-  - name: block
-    using:
-      foreign_key_constraint_on: block_id
-  - name: mentor
-    using:
-      foreign_key_constraint_on: mentor_id
-  - name: school
-    using:
-      foreign_key_constraint_on: udise
-  - name: subject
-    using:
-      foreign_key_constraint_on: subject_id
-array_relationships:
-  - name: student_results
-    using:
-      foreign_key_constraint_on:
-        column: assessment_visit_results_v2_id
-        table:
-          name: assessment_visit_results_students_2023_jul_sep
-          schema: public

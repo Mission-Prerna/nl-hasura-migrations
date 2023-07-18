@@ -1,0 +1,3 @@
+table:
+  name: chatbot_usage_district_block
+  schema: public

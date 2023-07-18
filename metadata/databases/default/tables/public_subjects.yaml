@@ -1,20 +1,3 @@
 table:
   name: subjects
   schema: public
-select_permissions:
-  - role: DIET
-    permission:
-      columns:
-        - name
-        - id
-        - created_at
-        - updated_at
-      filter: {}
-  - role: OpenRole
-    permission:
-      columns:
-        - name
-        - id
-        - created_at
-        - updated_at
-      filter: {}

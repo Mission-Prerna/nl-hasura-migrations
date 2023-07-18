@@ -1,18 +1,3 @@
 table:
   name: designations
   schema: public
-select_permissions:
-  - role: DIET
-    permission:
-      columns:
-        - name
-        - id
-        - created_at
-      filter: {}
-  - role: OpenRole
-    permission:
-      columns:
-        - name
-        - id
-        - created_at
-      filter: {}

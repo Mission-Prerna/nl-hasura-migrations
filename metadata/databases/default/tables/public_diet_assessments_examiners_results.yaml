@@ -1,0 +1,3 @@
+table:
+  name: diet_assessments_examiners_results
+  schema: public

@@ -1,29 +1,3 @@
 table:
   name: school
   schema: public
-object_relationships:
-  - name: school_visit
-    using:
-      manual_configuration:
-        column_mapping:
-          udise: school_udise
-        insertion_order: null
-        remote_table:
-          name: school_visit
-          schema: public
-select_permissions:
-  - role: DIET
-    permission:
-      columns:
-        - id
-        - districtCode
-        - districtName
-        - blockCode
-        - blockName
-        - schoolName
-        - udise
-        - location
-        - type
-      filter:
-        districtCode:
-          _eq: X-Hasura-District-Id

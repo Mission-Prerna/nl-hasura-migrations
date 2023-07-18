@@ -1,0 +1,3 @@
+table:
+  name: temp_visit_wise_student_result
+  schema: public

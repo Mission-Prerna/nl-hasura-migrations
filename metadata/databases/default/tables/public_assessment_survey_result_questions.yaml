@@ -1,7 +1,3 @@
 table:
   name: assessment_survey_result_questions
   schema: public
-object_relationships:
-  - name: assessment_survey_result_v2
-    using:
-      foreign_key_constraint_on: survey_id

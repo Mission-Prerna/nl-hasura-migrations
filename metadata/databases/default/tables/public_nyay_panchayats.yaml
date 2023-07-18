@@ -1,22 +1,3 @@
 table:
   name: nyay_panchayats
   schema: public
-select_permissions:
-  - role: DIET
-    permission:
-      columns:
-        - id
-        - name
-        - district_id
-        - block_id
-        - created_at
-      filter: {}
-  - role: OpenRole
-    permission:
-      columns:
-        - name
-        - block_id
-        - district_id
-        - id
-        - created_at
-      filter: {}
