@@ -1,3 +1,131 @@
 table:
   name: assessment_visit_results_v2
   schema: public
+object_relationships:
+  - name: mentor
+    using:
+      foreign_key_constraint_on: mentor_id
+  - name: school
+    using:
+      foreign_key_constraint_on: udise
+array_relationships:
+  - name: assessment_visit_results_students
+    using:
+      foreign_key_constraint_on:
+        column: assessment_visit_results_v2_id
+        table:
+          name: assessment_visit_results_students
+          schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check: {}
+      columns:
+        - actor_id
+        - app_version_code
+        - assessment_type_id
+        - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - subject_id
+        - submission_timestamp
+        - udise
+  - role: OpenRole
+    permission:
+      check: {}
+      columns:
+        - actor_id
+        - app_version_code
+        - assessment_type_id
+        - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - subject_id
+        - submission_timestamp
+        - udise
+  - role: manav_sampada
+    permission:
+      check: {}
+      columns:
+        - actor_id
+        - app_version_code
+        - assessment_type_id
+        - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - subject_id
+        - submission_timestamp
+        - udise
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - actor_id
+        - app_version_code
+        - assessment_type_id
+        - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - subject_id
+        - submission_timestamp
+        - udise
+      filter: {}
+      limit: 10000
+  - role: OpenRole
+    permission:
+      columns:
+        - actor_id
+        - app_version_code
+        - assessment_type_id
+        - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - subject_id
+        - submission_timestamp
+        - udise
+      filter: {}
+      limit: 10000
+  - role: manav_sampada
+    permission:
+      columns:
+        - actor_id
+        - app_version_code
+        - assessment_type_id
+        - block_id
+        - created_at
+        - grade
+        - id
+        - is_visited
+        - mentor_id
+        - module_result
+        - no_of_student
+        - subject_id
+        - submission_timestamp
+        - udise
+      filter: {}
+      limit: 10000

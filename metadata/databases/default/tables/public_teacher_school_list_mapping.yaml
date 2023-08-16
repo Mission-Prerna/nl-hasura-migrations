@@ -1,3 +1,25 @@
 table:
   name: teacher_school_list_mapping
   schema: public
+object_relationships:
+  - name: mentor
+    using:
+      foreign_key_constraint_on: mentor_id
+  - name: school_list
+    using:
+      foreign_key_constraint_on: school_list_id
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - mentor_id
+        - id
+        - school_list_id
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - mentor_id
+        - id
+        - school_list_id
+      filter: {}

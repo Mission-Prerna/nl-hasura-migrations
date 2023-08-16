@@ -1,3 +1,265 @@
 table:
   name: homelearning_event
   schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      columns:
+        - deviceId
+        - id
+        - created_at
+        - updated_at
+        - subject
+        - actualGrade
+        - currentGrade
+        - grade1_trial1_correct_words
+        - grade1_trial2_correct_words
+        - grade1_trial3_correct_words
+        - grade1_trial4_correct_words
+        - grade1_trial5_correct_words
+        - grade2_trial1_correct_words
+        - grade2_trial2_correct_words
+        - grade2_trial3_correct_words
+        - grade2_trial4_correct_words
+        - grade3_trial1_correct_words
+        - grade3_trial2_correct_words
+        - grade3_trial3_correct_words
+        - grade3_trial4_correct_words
+        - grade2_trial1_score
+        - grade2_trial2_score
+        - grade2_trial3_score
+        - grade2_trial4_score
+        - grade3_trial1_score
+        - grade3_trial2_score
+        - grade3_trial3_score
+        - grade3_trial4_score
+        - grade4_trial1_score
+        - grade4_trial2_score
+        - grade4_trial3_score
+        - grade4_trial4_score
+        - grade5_trial1_score
+        - grade5_trial2_score
+        - grade5_trial3_score
+        - grade5_trial4_score
+        - grade1_trial1_time
+        - grade1_trial2_time
+        - grade1_trial3_time
+        - grade1_trial4_time
+        - grade1_trial5_time
+        - grade2_trial1_time
+        - grade2_trial2_time
+        - grade2_trial3_time
+        - grade2_trial4_time
+        - grade3_trial1_time
+        - grade3_trial2_time
+        - grade3_trial3_time
+        - grade3_trial4_time
+        - isAssessmentComplete
+        - default_role
+        - erhms_code
+        - isUserTeacher
+        - push_time
+        - district
+        - block
+        - score
+        - start_time
+        - appVersion
+  - role: manav_sampada
+    permission:
+      check:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      columns:
+        - isAssessmentComplete
+        - isUserTeacher
+        - actualGrade
+        - currentGrade
+        - grade1_trial1_correct_words
+        - grade1_trial1_time
+        - grade1_trial2_correct_words
+        - grade1_trial2_time
+        - grade1_trial3_correct_words
+        - grade1_trial3_time
+        - grade1_trial4_correct_words
+        - grade1_trial4_time
+        - grade1_trial5_correct_words
+        - grade1_trial5_time
+        - grade2_trial1_correct_words
+        - grade2_trial1_score
+        - grade2_trial1_time
+        - grade2_trial2_correct_words
+        - grade2_trial2_score
+        - grade2_trial2_time
+        - grade2_trial3_correct_words
+        - grade2_trial3_score
+        - grade2_trial3_time
+        - grade2_trial4_correct_words
+        - grade2_trial4_score
+        - grade2_trial4_time
+        - grade3_trial1_correct_words
+        - grade3_trial1_score
+        - grade3_trial1_time
+        - grade3_trial2_correct_words
+        - grade3_trial2_score
+        - grade3_trial2_time
+        - grade3_trial3_correct_words
+        - grade3_trial3_score
+        - grade3_trial3_time
+        - grade3_trial4_correct_words
+        - grade3_trial4_score
+        - grade3_trial4_time
+        - grade4_trial1_score
+        - grade4_trial2_score
+        - grade4_trial3_score
+        - grade4_trial4_score
+        - grade5_trial1_score
+        - grade5_trial2_score
+        - grade5_trial3_score
+        - grade5_trial4_score
+        - id
+        - score
+        - appVersion
+        - block
+        - default_role
+        - deviceId
+        - district
+        - erhms_code
+        - subject
+        - push_time
+        - created_at
+        - start_time
+        - updated_at
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - isAssessmentComplete
+        - isUserTeacher
+        - actualGrade
+        - currentGrade
+        - grade1_trial1_correct_words
+        - grade1_trial1_time
+        - grade1_trial2_correct_words
+        - grade1_trial2_time
+        - grade1_trial3_correct_words
+        - grade1_trial3_time
+        - grade1_trial4_correct_words
+        - grade1_trial4_time
+        - grade1_trial5_correct_words
+        - grade1_trial5_time
+        - grade2_trial1_correct_words
+        - grade2_trial1_score
+        - grade2_trial1_time
+        - grade2_trial2_correct_words
+        - grade2_trial2_score
+        - grade2_trial2_time
+        - grade2_trial3_correct_words
+        - grade2_trial3_score
+        - grade2_trial3_time
+        - grade2_trial4_correct_words
+        - grade2_trial4_score
+        - grade2_trial4_time
+        - grade3_trial1_correct_words
+        - grade3_trial1_score
+        - grade3_trial1_time
+        - grade3_trial2_correct_words
+        - grade3_trial2_score
+        - grade3_trial2_time
+        - grade3_trial3_correct_words
+        - grade3_trial3_score
+        - grade3_trial3_time
+        - grade3_trial4_correct_words
+        - grade3_trial4_score
+        - grade3_trial4_time
+        - grade4_trial1_score
+        - grade4_trial2_score
+        - grade4_trial3_score
+        - grade4_trial4_score
+        - grade5_trial1_score
+        - grade5_trial2_score
+        - grade5_trial3_score
+        - grade5_trial4_score
+        - id
+        - score
+        - appVersion
+        - block
+        - default_role
+        - deviceId
+        - district
+        - erhms_code
+        - subject
+        - push_time
+        - created_at
+        - start_time
+        - updated_at
+      filter:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+  - role: manav_sampada
+    permission:
+      columns:
+        - isAssessmentComplete
+        - isUserTeacher
+        - actualGrade
+        - currentGrade
+        - grade1_trial1_correct_words
+        - grade1_trial1_time
+        - grade1_trial2_correct_words
+        - grade1_trial2_time
+        - grade1_trial3_correct_words
+        - grade1_trial3_time
+        - grade1_trial4_correct_words
+        - grade1_trial4_time
+        - grade1_trial5_correct_words
+        - grade1_trial5_time
+        - grade2_trial1_correct_words
+        - grade2_trial1_score
+        - grade2_trial1_time
+        - grade2_trial2_correct_words
+        - grade2_trial2_score
+        - grade2_trial2_time
+        - grade2_trial3_correct_words
+        - grade2_trial3_score
+        - grade2_trial3_time
+        - grade2_trial4_correct_words
+        - grade2_trial4_score
+        - grade2_trial4_time
+        - grade3_trial1_correct_words
+        - grade3_trial1_score
+        - grade3_trial1_time
+        - grade3_trial2_correct_words
+        - grade3_trial2_score
+        - grade3_trial2_time
+        - grade3_trial3_correct_words
+        - grade3_trial3_score
+        - grade3_trial3_time
+        - grade3_trial4_correct_words
+        - grade3_trial4_score
+        - grade3_trial4_time
+        - grade4_trial1_score
+        - grade4_trial2_score
+        - grade4_trial3_score
+        - grade4_trial4_score
+        - grade5_trial1_score
+        - grade5_trial2_score
+        - grade5_trial3_score
+        - grade5_trial4_score
+        - id
+        - score
+        - appVersion
+        - block
+        - default_role
+        - deviceId
+        - district
+        - erhms_code
+        - subject
+        - push_time
+        - created_at
+        - start_time
+        - updated_at
+      filter:
+        default_role:
+          _eq: X-Hasura-Designation-Id

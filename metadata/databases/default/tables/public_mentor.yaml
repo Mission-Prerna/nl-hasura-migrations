@@ -1,3 +1,101 @@
 table:
   name: mentor
   schema: public
+object_relationships:
+  - name: actor
+    using:
+      foreign_key_constraint_on: actor_id
+  - name: block
+    using:
+      foreign_key_constraint_on: block_id
+  - name: designationByDesignationId
+    using:
+      foreign_key_constraint_on: designation_id
+  - name: district
+    using:
+      foreign_key_constraint_on: district_id
+  - name: fcm_token
+    using:
+      manual_configuration:
+        column_mapping:
+          id: mentor_id
+        insertion_order: null
+        remote_table:
+          name: mentor_tokens
+          schema: public
+  - name: teacher_school_list_mapping
+    using:
+      manual_configuration:
+        column_mapping:
+          id: mentor_id
+        insertion_order: null
+        remote_table:
+          name: teacher_school_list_mapping
+          schema: public
+  - name: token
+    using:
+      manual_configuration:
+        column_mapping:
+          id: mentor_id
+        insertion_order: null
+        remote_table:
+          name: mentor_tokens
+          schema: public
+array_relationships:
+  - name: segmentations
+    using:
+      foreign_key_constraint_on:
+        column: mentor_id
+        table:
+          name: mentor_segmentation
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - id
+        - area_type
+        - block_town_name
+        - designation
+        - district_name
+        - officer_name
+        - phone_no
+        - subject_of_matter
+        - target_visits
+        - actor_id
+        - block_id
+        - designation_id
+        - district_id
+        - pin
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - id
+        - area_type
+        - block_town_name
+        - designation
+        - district_name
+        - officer_name
+        - phone_no
+        - subject_of_matter
+        - target_visits
+        - actor_id
+        - block_id
+        - designation_id
+        - district_id
+        - pin
+      filter: {}
+update_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - pin
+      filter: {}
+      check: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - pin
+      filter: {}
+      check: {}

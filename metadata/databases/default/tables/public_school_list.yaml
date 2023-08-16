@@ -1,3 +1,83 @@
 table:
   name: school_list
   schema: public
+object_relationships:
+  - name: blockByBlockId
+    using:
+      foreign_key_constraint_on: block_id
+  - name: districtByDistrictId
+    using:
+      foreign_key_constraint_on: district_id
+  - name: school_visit
+    using:
+      manual_configuration:
+        column_mapping:
+          udise_code: school_udise
+        insertion_order: null
+        remote_table:
+          name: school_visit
+          schema: public
+array_relationships:
+  - name: school_visits
+    using:
+      foreign_key_constraint_on:
+        column: school_udise
+        table:
+          name: school_visit
+          schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - udise
+        - is_sankul
+        - area_type
+        - block
+        - category
+        - district
+        - name
+        - nypanchayat
+        - type
+        - udise_code
+        - block_id
+        - district_id
+        - id
+        - nyay_panchayat_id
+        - total_student_registered
+      filter: {}
+      allow_aggregations: true
+  - role: OpenRole
+    permission:
+      columns:
+        - udise
+        - is_sankul
+        - area_type
+        - block
+        - category
+        - district
+        - name
+        - nypanchayat
+        - type
+        - udise_code
+        - block_id
+        - district_id
+        - id
+        - nyay_panchayat_id
+        - total_student_registered
+      filter: {}
+      allow_aggregations: true
+  - role: manav_sampada
+    permission:
+      columns:
+        - id
+        - total_student_registered
+        - area_type
+        - block
+        - category
+        - district
+        - name
+        - nypanchayat
+        - type
+        - udise_code
+      filter: {}
+      allow_aggregations: true

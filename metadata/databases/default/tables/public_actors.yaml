@@ -1,3 +1,16 @@
 table:
   name: actors
   schema: public
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - name
+        - id
+      filter: {}
+  - role: OpenRole
+    permission:
+      columns:
+        - name
+        - id
+      filter: {}

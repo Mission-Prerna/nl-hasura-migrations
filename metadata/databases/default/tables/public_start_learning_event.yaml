@@ -1,3 +1,67 @@
 table:
   name: start_learning_event
   schema: public
+insert_permissions:
+  - role: DIET
+    permission:
+      check:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      columns:
+        - actualGrade
+        - deviceId
+        - erhms_code
+        - isUserTeacher
+        - start_time
+        - subject
+  - role: manav_sampada
+    permission:
+      check:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      columns:
+        - actualGrade
+        - created_at
+        - default_role
+        - deviceId
+        - erhms_code
+        - id
+        - isUserTeacher
+        - start_time
+        - subject
+        - updated_at
+select_permissions:
+  - role: DIET
+    permission:
+      columns:
+        - actualGrade
+        - created_at
+        - default_role
+        - deviceId
+        - erhms_code
+        - id
+        - isUserTeacher
+        - start_time
+        - subject
+        - updated_at
+      filter:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      limit: 1
+  - role: manav_sampada
+    permission:
+      columns:
+        - isUserTeacher
+        - actualGrade
+        - id
+        - default_role
+        - deviceId
+        - erhms_code
+        - subject
+        - start_time
+        - created_at
+        - updated_at
+      filter:
+        default_role:
+          _eq: X-Hasura-Designation-Id
+      limit: 1
