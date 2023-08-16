@@ -14,9 +14,6 @@ create table assessment_survey_result_questions
         unique (survey_id, qid)
 );
 
-alter table assessment_survey_result_questions
-    owner to mpcuplakshyauser;
-
 create index assessment_survey_result_questions_created_at_idx
     on assessment_survey_result_questions (created_at);
 

@@ -1,0 +1,3 @@
+drop materialized view assessment_result_nl_dashboard;
+drop materialized view assessment_result_nl_temp;
+drop function get_nipun_status;
