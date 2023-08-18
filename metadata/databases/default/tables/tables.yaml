@@ -1,6 +1,5 @@
 - "!include public_actors.yaml"
 - "!include public_assessment_result_nl_dashboard.yaml"
-- "!include public_assessment_result_nl_dashboard_old.yaml"
 - "!include public_assessment_results.yaml"
 - "!include public_assessment_survey_result.yaml"
 - "!include public_assessment_survey_result_questions.yaml"
