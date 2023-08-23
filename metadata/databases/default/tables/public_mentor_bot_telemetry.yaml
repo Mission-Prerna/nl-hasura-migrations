@@ -1,0 +1,3 @@
+table:
+  name: mentor_bot_telemetry
+  schema: public
