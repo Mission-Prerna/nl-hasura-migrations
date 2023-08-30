@@ -20,6 +20,15 @@
   definition:
     query:
       collection_name: allowed-queries
+      query_name: Get Mentor Phones.
+  methods:
+    - GET
+  name: Get Mentor Phones.
+  url: mentor/phone
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
       query_name: School
   methods:
     - GET

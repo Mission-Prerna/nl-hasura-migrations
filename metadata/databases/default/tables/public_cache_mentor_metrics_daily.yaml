@@ -1,0 +1,3 @@
+table:
+  name: cache_mentor_metrics_daily
+  schema: public

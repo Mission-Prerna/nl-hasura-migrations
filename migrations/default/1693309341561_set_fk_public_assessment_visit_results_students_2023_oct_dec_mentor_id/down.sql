@@ -1,0 +1,1 @@
+alter table "public"."assessment_visit_results_students_2023_oct_dec" drop constraint "assessment_visit_results_students_2023_oct_dec_mentor_id_fke";
