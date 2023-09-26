@@ -53,6 +53,7 @@
 - "!include public_segments.yaml"
 - "!include public_start_learning_event.yaml"
 - "!include public_student_install.yaml"
+- "!include public_student_update_logs.yaml"
 - "!include public_students.yaml"
 - "!include public_subjects.yaml"
 - "!include public_teacher_school_list_mapping.yaml"
