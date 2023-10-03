@@ -1,0 +1,3 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- SELECT create_hypertable('public.assessments', 'submitted_at', chunk_time_interval => INTERVAL '1 month');

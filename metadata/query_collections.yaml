@@ -51,10 +51,10 @@
               blockCode
             }
           }
-      - name: Get Mentor Phones.
+      - name: Inactive mentors
         query: |
-          query MentorPhoneQuery ($limit: Int = 10, $offset: Int = 0) {
-            mentor(limit: $limit, offset: $offset) {
+          query FetchMentorDetails ($limit: Int) {
+            mentor(limit: $limit, order_by: {updated_at:asc}) {
               phone_no
             }
           }

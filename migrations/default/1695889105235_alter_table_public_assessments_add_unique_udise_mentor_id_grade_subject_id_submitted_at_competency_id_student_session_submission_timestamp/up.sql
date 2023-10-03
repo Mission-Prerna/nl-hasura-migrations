@@ -1,0 +1,1 @@
+alter table "public"."assessments" add constraint "assessments_udise_mentor_id_grade_subject_id_submitted_at_competency_id_student_session_submission_timestamp_key" unique ("udise", "mentor_id", "grade", "subject_id", "submitted_at", "competency_id", "student_session", "submission_timestamp");

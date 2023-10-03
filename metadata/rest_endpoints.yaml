@@ -11,20 +11,20 @@
   definition:
     query:
       collection_name: allowed-queries
+      query_name: Inactive mentors
+  methods:
+    - GET
+  name: Inactive mentors
+  url: inactive-mentors
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
       query_name: Mentor
   methods:
     - GET
   name: Mentor
   url: mentor
-- comment: ""
-  definition:
-    query:
-      collection_name: allowed-queries
-      query_name: Get Mentor Phones.
-  methods:
-    - GET
-  name: Get Mentor Phones.
-  url: mentor/phone
 - comment: ""
   definition:
     query:
