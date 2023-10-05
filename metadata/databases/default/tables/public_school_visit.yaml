@@ -1,19 +1,6 @@
 table:
   name: school_visit
   schema: public
-object_relationships:
-  - name: mentor
-    using:
-      foreign_key_constraint_on: mentor_id
-  - name: school_list
-    using:
-      manual_configuration:
-        column_mapping:
-          school_udise: udise_code
-        insertion_order: null
-        remote_table:
-          name: school_list
-          schema: public
 select_permissions:
   - role: DIET
     permission:

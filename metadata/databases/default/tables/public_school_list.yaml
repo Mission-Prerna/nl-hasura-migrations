@@ -8,23 +8,6 @@ object_relationships:
   - name: districtByDistrictId
     using:
       foreign_key_constraint_on: district_id
-  - name: school_visit
-    using:
-      manual_configuration:
-        column_mapping:
-          udise_code: school_udise
-        insertion_order: null
-        remote_table:
-          name: school_visit
-          schema: public
-array_relationships:
-  - name: school_visits
-    using:
-      foreign_key_constraint_on:
-        column: school_udise
-        table:
-          name: school_visit
-          schema: public
 select_permissions:
   - role: DIET
     permission:

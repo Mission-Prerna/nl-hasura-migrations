@@ -1,0 +1,1 @@
+drop table if exists script_performance_month_wise_report;

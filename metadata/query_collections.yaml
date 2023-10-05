@@ -36,25 +36,10 @@
               area_type
             }
           }
-      - name: School
+      - name: Get Mentor Phones.
         query: |
-          query SchoolQuery ($limit: Int = 10, $offset: Int = 0, $id: Int = 0) {
-            school(limit: $limit, offset: $offset, where: {id:{_gt:$id}}, order_by: {id:asc}) {
-              id
-              location
-              schoolName
-              type
-              udise
-              districtName
-              districtCode
-              blockName
-              blockCode
-            }
-          }
-      - name: Inactive mentors
-        query: |
-          query FetchMentorDetails ($limit: Int) {
-            mentor(limit: $limit, order_by: {updated_at:asc}) {
+          query MentorPhoneQuery ($limit: Int = 10, $offset: Int = 0) {
+            mentor(limit: $limit, offset: $offset) {
               phone_no
             }
           }

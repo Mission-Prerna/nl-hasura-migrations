@@ -1,0 +1,1 @@
+drop table if exists assessment_visit_results_module_results;
