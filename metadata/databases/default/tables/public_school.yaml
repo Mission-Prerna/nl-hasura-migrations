@@ -1,16 +1,6 @@
 table:
   name: school
   schema: public
-object_relationships:
-  - name: school_visit
-    using:
-      manual_configuration:
-        column_mapping:
-          udise: school_udise
-        insertion_order: null
-        remote_table:
-          name: school_visit
-          schema: public
 select_permissions:
   - role: DIET
     permission:

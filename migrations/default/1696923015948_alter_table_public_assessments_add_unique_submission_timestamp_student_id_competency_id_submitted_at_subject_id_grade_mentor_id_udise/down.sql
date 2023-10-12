@@ -1,0 +1,1 @@
+alter table "public"."assessments" drop constraint "assessments_submission_timestamp_student_id_competency_id_submitted_at_subject_id_grade_mentor_id_udise_key";
