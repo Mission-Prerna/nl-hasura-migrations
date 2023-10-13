@@ -1,0 +1,1 @@
+drop materialized view if exists assessment_result_nl_dashboard_old;

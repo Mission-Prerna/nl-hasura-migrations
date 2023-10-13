@@ -1,0 +1,4 @@
+ALTER MATERIALIZED VIEW assessment_result_nl_dashboard rename to assessment_result_nl_dashboard_old;
+ALTER MATERIALIZED VIEW assessment_result_nl_temp rename to assessment_result_nl_temp_old;
+ALTER MATERIALIZED VIEW assessment_result_nl_dashboard_new rename to assessment_result_nl_dashboard;
+ALTER MATERIALIZED VIEW assessment_result_nl_temp_new rename to assessment_result_nl_temp;
