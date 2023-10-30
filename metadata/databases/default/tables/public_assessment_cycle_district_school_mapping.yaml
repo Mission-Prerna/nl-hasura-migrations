@@ -1,0 +1,3 @@
+table:
+  name: assessment_cycle_district_school_mapping
+  schema: public

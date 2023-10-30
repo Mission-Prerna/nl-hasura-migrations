@@ -1,0 +1,1 @@
+DROP TRIGGER "set_public_assessment_cycle_district_school_mapping_updated_at" ON "public"."assessment_cycle_district_school_mapping";
