@@ -1,0 +1,3 @@
+table:
+  name: android_actions
+  schema: public
