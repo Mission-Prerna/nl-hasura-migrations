@@ -1,1 +1,3 @@
-{}
+dataconnector:
+  clickhouse:
+    uri: http://data-connector-agent:8080

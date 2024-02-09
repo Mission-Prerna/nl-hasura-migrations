@@ -1,4 +1,6 @@
 - "!include public_actors.yaml"
+- "!include public_android_actions.yaml"
+- "!include public_app_actions.yaml"
 - "!include public_assessment_cycle_district_mentor_mapping.yaml"
 - "!include public_assessment_cycle_district_school_mapping.yaml"
 - "!include public_assessment_cycle_school_nipun_results.yaml"
@@ -50,3 +52,4 @@
 - "!include public_subjects.yaml"
 - "!include public_teacher_school_list_mapping.yaml"
 - "!include public_workflow_refids_mapping.yaml"
+- "!include timescaledb_information_continuous_aggregates.yaml"
