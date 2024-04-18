@@ -1,0 +1,3 @@
+table:
+  name: school_results_fraud_reports
+  schema: public

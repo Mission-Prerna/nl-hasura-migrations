@@ -1,3 +1,11 @@
 table:
   name: assessment_visit_results_v2_2024_jan_mar
   schema: public
+array_relationships:
+  - name: Student_result
+    using:
+      foreign_key_constraint_on:
+        column: assessment_visit_results_v2_id
+        table:
+          name: assessment_visit_results_students_2024_jan_mar
+          schema: public

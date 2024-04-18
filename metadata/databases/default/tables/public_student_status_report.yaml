@@ -1,0 +1,3 @@
+table:
+  name: student_status_report
+  schema: public

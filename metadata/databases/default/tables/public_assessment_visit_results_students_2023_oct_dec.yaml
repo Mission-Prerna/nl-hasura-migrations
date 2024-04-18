@@ -1,6 +1,13 @@
 table:
   name: assessment_visit_results_students_2023_oct_dec
   schema: public
+object_relationships:
+  - name: assessment_visit_results_students_2023_oct_dec_mentor
+    using:
+      foreign_key_constraint_on: mentor_id
+  - name: assessment_visit_results_students_2023_oct_dec_student
+    using:
+      foreign_key_constraint_on: student_id
 array_relationships:
   - name: odk_results
     using:

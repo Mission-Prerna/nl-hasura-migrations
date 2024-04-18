@@ -42,6 +42,13 @@ object_relationships:
           name: mentor_tokens
           schema: public
 array_relationships:
+  - name: mentor_assessment_visit_results_students_2024_apr_juns
+    using:
+      foreign_key_constraint_on:
+        column: mentor_id
+        table:
+          name: assessment_visit_results_students_2024_apr_jun
+          schema: public
   - name: segmentations
     using:
       foreign_key_constraint_on:

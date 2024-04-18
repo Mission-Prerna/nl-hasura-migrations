@@ -1,0 +1,3 @@
+table:
+  name: assessment_result_nl_temp_old
+  schema: public
