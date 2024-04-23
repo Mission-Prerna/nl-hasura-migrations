@@ -1,0 +1,8 @@
+table:
+  name: new schools _2023_07_25
+  schema: public
+configuration:
+  column_config: {}
+  custom_column_names: {}
+  custom_name: new_schools__2023_07_25
+  custom_root_fields: {}
