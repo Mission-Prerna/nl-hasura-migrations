@@ -9,6 +9,13 @@ array_relationships:
         table:
           name: assessment_visit_results_v2_2024_apr_jun
           schema: public
+  - name: assessment_visit_results_v2_2023_apr_juns
+    using:
+      foreign_key_constraint_on:
+        column: actor_id
+        table:
+          name: assessment_visit_results_v2_2023_apr_jun
+          schema: public
 select_permissions:
   - role: DIET
     permission:
