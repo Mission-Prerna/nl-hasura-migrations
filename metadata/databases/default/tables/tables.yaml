@@ -1,3 +1,4 @@
+- "!include public_actor_school_blacklist.yaml"
 - "!include public_actors.yaml"
 - "!include public_android_actions.yaml"
 - "!include public_app_actions.yaml"
